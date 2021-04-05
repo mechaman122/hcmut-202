@@ -9,9 +9,8 @@ int main(){
 	char a,b,c;
 	while (true){
 		cin >> a >> b >> c;
-		if(b - a == 1 && c - b == 1){
-			cout << "true" << endl;
-		} else if(a == '*' && b == '*' && c == '*') break; 
+		if(a == '*' && b == '*' && c == '*') break;
+		else if(b - a <= 1 && c - b <= 1 && b >= a && c >= b) cout << "true" << endl; 
 		else cout << "false" << endl;
 	} 
 }
